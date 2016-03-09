@@ -51,7 +51,7 @@ gulp.task('scripts', function() {
 
 gulp.task('watch', function() {
   plugins.livereload.listen();
-  gulp.watch('./build/', ['sass', 'scripts']);
+  gulp.watch('./build/**/*', ['sass', 'scripts']);
 });
 
 // Default task
