@@ -6,12 +6,15 @@ Includes:
 
 - Gulp (with Extras)
 - Animate.css
+- TweenMax CDN
+- jQuery CDN
+- Font Awesome
 - HTML Boilerplate 
 
 To Do
 ==========================
-- Add Mobile Drawer
-- Add Sidebar
-- Add Content Section
-- Add Navigation
+- Content Section
+- Top Navigation Bar
+- Responsive Media Query (Sass functions)
+- Animated menu button (bars to cross)
 
