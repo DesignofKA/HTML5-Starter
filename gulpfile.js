@@ -5,15 +5,15 @@ var paths = {
 
 var gulp = require('gulp'),
 	gulpLoadPlugins = require('gulp-load-plugins'),
-		browserSync = require('browser-sync').create(),
+	browserSync = require('browser-sync').create(),
 	plugins = gulpLoadPlugins(); // Last Injection
 
-gulp.task('browser-sync', function() {
-	browserSync.init({
-				proxy: "localhost:8888/wjpro/",
-				port: 3000
-	});
-});
+// gulp.task('browser-sync', function() {
+// 	browserSync.init({
+// 				proxy: "localhost:8888/wjpro/",
+// 				port: 3000
+// 	});
+// });
 
 gulp.task('sass', function () {
 	gulp.src(paths.build)
@@ -48,6 +48,5 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'browser-sync', 'watch'], function() {
-  //other stuff
+gulp.task('default', ['sass', 'watch'], function() {
 });
