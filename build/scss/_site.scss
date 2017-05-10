@@ -53,12 +53,33 @@ li {
 		color: white;
 		cursor: pointer;
 		z-index: 500;
+		opacity: 0.3;
+		@extend .ani;
+		&:hover {
+			opacity: 1;
+
+		}
 	}
 	ul {
 		position: relative;
 		top: 80px;
-		li {
-			color: #FFF;
+		padding-left: 0;
+		a {
+			text-decoration: none;
+			li {
+				color: #FFF;
+				padding: 10px 0;
+				padding-left: 20px;
+				@extend .ani;
+				p {
+					margin: 0;
+				}
+			}
+			&:hover {
+				li {
+					background-color: rgba(#fff, 0.2);
+				}
+			}
 		}
 	}
 }
